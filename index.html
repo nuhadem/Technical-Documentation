@@ -14,7 +14,7 @@
         <header>Java Documentation</header>
         <ul>
             <li><a class="nav-link" href="#Getting_Started_With_Java">Getting Started With Java</a></li>
-            <li><a class="nav-link" href="#Java_Entry_Point"></a>Java Entry Point</li>
+            <li><a class="nav-link" href="#Java_Entry_Point">Java Entry Point</a></li>
             <li><a class="nav-link" href="#Printing_to_the_console">Printing to the console</a></li>
             <li><a class="nav-link" href="#Declaring_Function">Declaring Function</a></li>
             <li><a class="nav-link" href="#Object_Oriented_Programming">Object Oriented Programming</a></li>
@@ -77,20 +77,50 @@
             <pre>
                 <code> 
                     public static void main(String[] args) {   
-                { // function code } 
+                 // function code  
                     }
                 </code> 
             </pre>
         </section>
         <section class="main-section" id="Object_Oriented_Programming">
             <header>Object Oriented Programming</header>
-            <p›Java is known as an object oriented programming language.‹/p>
-                <p>
-                    This means that it is easy to represent entities as objects by using classes and encapsulation.
-                </p>
+            <p>Java is known as an object oriented programming language.</p>
+            <p>
+                This means that it is easy to represent entities as objects by using classes and encapsulation.
+            </p>
 
-                <p>
-                    An example of this might be a Student class to represent a student </p>
+            <p>
+                An example of this might be a Student class to represent a student </p>
+            <pre>
+                <code> 
+                    public class Student { 
+                    /* Student properties */ 
+                        private String name; 
+                        private int age; 
+                    }
+                    /* Constructor */ 
+                    public Student(String name, int age){ 
+                        this.name = name; this.age = age; 
+                    } 
+                    
+                    /* Getter method */ 
+                    public String getName(){ 
+                        return name; 
+                    } 
+                    /* Setter method */ 
+                    public void setName(String name){ 
+                        this.name = name; 
+                    }
+                </code> 
+            </pre>
+            <pre> 
+                <code> 
+                    Student student1 = new Student("Jimmy", 19); 
+                    String jimmyName = studentl.getName(); 
+                    student1.setName("Kevin"); 
+                    String kevinName = student1.getName(); 
+                </code> 
+            </pre>
         </section>
     </main>
 </body>
