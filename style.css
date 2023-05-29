@@ -32,7 +32,9 @@ section{
     text-decoration: none;
     cursor: pointer;
     font-size: 18px;
-    transition: text-indent 0.3s ease-in-out;
+    transition: text-indent 0.1s ease-in-out;
+    resize: horizontal;
+    overflow-x:scroll;
 }
 #navbar a:hover{
     font-weight: 500;
@@ -49,4 +51,46 @@ ol{
 }
 header{
     color:black;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 500;
 }
+code{
+    display: block;
+    text-align: left;
+    white-space: pre;
+    word-break:normal;
+    word-wrap: normal;
+    line-height: 1.5;
+    background-color: #fff;
+    padding: 0 15px;
+    margin: 10px;
+    border-radius: 15px;
+}
+.image{
+    width: 70%;
+    margin-left: 30px;
+}
+footer{
+    padding: 40px;
+    text-align: center;
+    color: #4d4e53;
+}
+@media only screen and (min-width: 815px) {
+    body {
+      flex-direction: row;
+    }
+    #navbar{
+        width: 300px;
+        position: fixed;
+        height: 100%;
+    }
+    #main-doc{
+        margin: 0 20px;
+        margin-left: 350px;
+    }
+  }
+  html{
+    scroll-behavior: smooth;
+  }
